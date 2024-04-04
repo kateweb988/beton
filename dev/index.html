@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /> -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+	<title>Бетон партнер</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="icon" href="img/favicon.svg" type="image/x-icon">
+
+	<meta property="og:locale" content="ru-Ru">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+	<h2 style="text-align: center; margin: 40px auto; color: black">
+		Pages
+	</h2>
+	<ul class="mm" style="display: flex; max-width: 800px; margin: 0 auto 50px; flex-wrap: wrap;">
+		<li style="width: 25%; margin: 0 auto 40px;">
+			<a href="main.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Главная</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto 40px;">
+			<a href="policy.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Политика</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto 40px;">
+			<a href="error.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Ошибка</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto 40px;">
+			<a href="contacts.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Контакты</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto 40px;">
+			<a href="item.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Продукция</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto 40px;">
+			<a href="about.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">О нас</a>
+		</li>
+	</ul>
+	<div class="d-flex"
+		style="justify-content: center; margin-top: 80px; max-width: 1000px; margin: 0 auto; flex-wrap: wrap;">
+		<a href="#" class="btn a1" style="margin: 20px;">
+			popup1
+		</a>
+		<a href="#" class="btn a2" style="margin: 20px;">
+			popup2
+		</a>
+		<a href="#" class="btn  a3" style="margin: 20px;">
+			popup3
+		</a>
+		<a href="#" class="btn a4" style="margin: 20px;">
+			popup4
+		</a>
+	</div>
+	<div class="popup__bg" id="popup">
+		<div class="popup pop">
+			<img src="img/close.svg" alt="" class="close-popup">
+			<div class="popup__wrap">
+				<h2>
+					Заказать звонок
+				</h2>
+				<form action="#" class="pay__form formWithValidation">
+					<div class="pay__flex q">
+						<div class="pay__item pay__item_2">
+							<label>
+								Ваше имя: <span>*</span>
+							</label>
+							<input type="text" placeholder="Представьтесь" class="form-control field">
+						</div>
+						<div class="pay__item pay__item_2">
+							<label>
+								Номер телефона: <span>*</span>
+							</label>
+							<input type="tel" placeholder="+7 (___) ___ - __ - __" class="form-control tel field">
+						</div>
+					</div>
+					<div class="pay__bottom">
+						<button class="btn pay__btn btn-submit validateBtn">
+							Отправить <img src="img/a1.svg" alt="">
+						</button>
+						<div class="pay__area">
+							<input class="form-check-input custom-checkbox" type="checkbox" name="form" id="form1"
+								value="WhatsApp ">
+							<label class="form-check-label " for="form1">
+								<p>
+									Нажимая кнопку “Отправить” я подтверждаю, что согласен <br>
+									с <a href="#" target="_blank"> политикой конфиденциальности.</a>
+								</p>
+							</label>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="popup__bg2" id="popup2">
+		<div class="popup2 pop">
+			<img src="img/close.svg" alt="" class="close-popup2  close">
+			<div class="popup__wrap">
+				<h2>
+					Оставить отзыв
+				</h2>
+				<form action="#" class="pay__form formWithValidation2">
+					<div class="pay__flex q">
+						<div class="pay__item pay__item_2">
+							<label>
+								Ваше имя: <span>*</span>
+							</label>
+							<input type="text" placeholder="Представьтесь" class="form-control field">
+						</div>
+						<div class="pay__item pay__item_2">
+							<label>
+								Комментарий: <span>*</span>
+							</label>
+							<textarea name="text" placeholder="Текст сообщения" class="form-control field"></textarea>
+						</div>
+					</div>
+					<div class="pay__bottom">
+						<button class="btn pay__btn btn-submit validateBtn2">
+							Отправить <img src="img/a1.svg" alt="">
+						</button>
+						<div class="pay__area">
+							<input class="form-check-input custom-checkbox" type="checkbox" name="form" id="form13"
+								value="WhatsApp ">
+							<label class="form-check-label " for="form13">
+								<p>
+									Нажимая кнопку “Отправить” я подтверждаю, что согласен <br>
+									с <a href="#" target="_blank"> политикой конфиденциальности.</a>
+								</p>
+							</label>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="popup__bg3" id="popup3">
+		<div class="popup3 pop">
+			<img src="img/close.svg" alt="" class="close-popup3 close">
+			<div class="popup__wrap">
+				<h2>
+					Спасибо!
+				</h2>
+				<p class="pop__sub">
+					Мы получили Вашу заявку и уже обрабатываем её. Мы свяжемся с вами по указанным контактам в ближайшее
+					время.
+				</p>
+				<button class="pop__btn btn pop__btn_1 close-popup3">
+					Закрыть
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="popup__bg4" id="popup4">
+		<div class="popup4 pop">
+			<img src="img/close.svg" alt="" class="close-popup4 close">
+			<div class="popup__wrap">
+				<h2>
+					Спасибо!
+				</h2>
+				<p class="pop__sub">
+					Спасибо за ваш отзыв. Он будет опубликован после проверки моджератором.
+				</p>
+				<button class="pop__btn pop__btn_2 btn">
+					Закрыть
+				</button>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="js/all.js"></script>
+</body>
+
+</html>

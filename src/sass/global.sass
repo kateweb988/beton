@@ -1,0 +1,124 @@
+body
+   font-family: 'Vela Sans'
+   background: rgb(249, 249, 249)
+   font-size: 14px
+   font-weight: 400
+   line-height: 140%
+   color: rgb(18, 18, 18)
+a
+   text-decoration: none
+   box-sizing: border-box
+   transition: 0.5s !important
+   &:hover 
+      color: $blue
+.container
+   padding: 0 15px
+   max-width: 1311px
+   margin: 0 auto
+   @media ( max-width: 1199px )
+      max-width: 960px !important
+   @media (max-width: 991px)
+      max-width: 720px !important
+   @media (max-width: 767px)
+      max-width: 540px !important
+.d-flex, .q
+   display: flex
+.body-wrap
+   overflow: hidden
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+.blue 
+   color: $light_blue
+footer
+   margin-top: auto
+h1
+   color: rgb(29, 38, 54)
+   font-size: 61px
+   line-height: 107%
+   font-weight: 700
+   margin: 0
+h2 
+   margin: 0
+   font-size: 48px
+   font-weight: 700
+   letter-spacing: -0.02em
+   line-height: 55px
+ul 
+   margin: 0
+   padding: 0
+   list-style-type: none
+p
+   margin: 0
+a
+   transition: color 0.5s ease
+   box-sizing: border-box
+li
+   a
+      transition: color 0.5s ease
+button
+   cursor: pointer
+   box-sizing: border-box
+textarea
+   transition: border 0.5s
+   box-sizing: border-box
+   &:focus
+      transition: border 0.5s
+      outline: none
+      border: 1px solid rgb(5, 11, 46) 
+input
+   transition: 0.5s
+   box-sizing: border-box
+   border: 1px solid #fff
+   &:disabled
+      pointer-events: none
+      opacity: 0.5
+   &:focus 
+      border: 1px solid $blue 
+      transition: 0.5s
+   &:focus-visible
+      outline: initial
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-results-button, input[type="search"]::-webkit-search-results-decoration
+   display: none
+path
+   transition: fill 0.5s, stroke 0.5s
+div 
+   box-sizing: border-box
+.icon 
+   transition: fill 0.5s, stroke 0.5s
+html * 
+   scrollbar-width: thin
+   scrollbar-color: blue $blue
+*::-webkit-scrollbar
+   height: 4px
+   width: 4px
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 0px
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb 
+   background-color: $blue
+   border-radius: 0px
+.btn 
+   background: $blue
+   display: flex
+   position: relative
+   border-radius: 900px
+   align-items: center
+   justify-content: center
+   width: 238px
+   height: 70px
+   border: 1px solid $blue
+   transition: 0.5s
+   color: rgb(255, 255, 255)
+   font-size: 16px
+   font-weight: 600
+   line-height: 34px
+   &:hover 
+      background: $light_blue
+      border: 1px solid $light_blue
+      color: white
+   img 
+      margin-left: 7px

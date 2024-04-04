@@ -1,0 +1,92 @@
+
+@font-face {
+    font-family: 'Vela Sans';
+    src: url('/fonts/VelaSans-SemiBold.eot');
+    src: url('/fonts/VelaSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/VelaSans-SemiBold.woff2') format('woff2'),
+        url('/fonts/VelaSans-SemiBold.woff') format('woff'),
+        url('/fonts/VelaSans-SemiBold.ttf') format('truetype'),
+        url('/fonts/VelaSans-SemiBold.svg#VelaSans-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vela Sans';
+    src: url('/fonts/VelaSans-ExtraLight.eot');
+    src: url('/fonts/VelaSans-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/VelaSans-ExtraLight.woff2') format('woff2'),
+        url('/fonts/VelaSans-ExtraLight.woff') format('woff'),
+        url('/fonts/VelaSans-ExtraLight.ttf') format('truetype'),
+        url('/fonts/VelaSans-ExtraLight.svg#VelaSans-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vela Sans';
+    src: url('/fonts/VelaSans-Light.eot');
+    src: url('/fonts/VelaSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/VelaSans-Light.woff2') format('woff2'),
+        url('/fonts/VelaSans-Light.woff') format('woff'),
+        url('/fonts/VelaSans-Light.ttf') format('truetype'),
+        url('/fonts/VelaSans-Light.svg#VelaSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vela Sans';
+    src: url('/fonts/VelaSans-ExtraBold.eot');
+    src: url('/fonts/VelaSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/VelaSans-ExtraBold.woff2') format('woff2'),
+        url('/fonts/VelaSans-ExtraBold.woff') format('woff'),
+        url('/fonts/VelaSans-ExtraBold.ttf') format('truetype'),
+        url('/fonts/VelaSans-ExtraBold.svg#VelaSans-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vela Sans';
+    src: url('/fonts/VelaSans-Medium.eot');
+    src: url('/fonts/VelaSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/VelaSans-Medium.woff2') format('woff2'),
+        url('/fonts/VelaSans-Medium.woff') format('woff'),
+        url('/fonts/VelaSans-Medium.ttf') format('truetype'),
+        url('/fonts/VelaSans-Medium.svg#VelaSans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vela Sans';
+    src: url('/fonts/VelaSans-Bold.eot');
+    src: url('/fonts/VelaSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/VelaSans-Bold.woff2') format('woff2'),
+        url('/fonts/VelaSans-Bold.woff') format('woff'),
+        url('/fonts/VelaSans-Bold.ttf') format('truetype'),
+        url('/fonts/VelaSans-Bold.svg#VelaSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vela Sans';
+    src: url('/fonts/VelaSans-Regular.eot');
+    src: url('/fonts/VelaSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/VelaSans-Regular.woff2') format('woff2'),
+        url('/fonts/VelaSans-Regular.woff') format('woff'),
+        url('/fonts/VelaSans-Regular.ttf') format('truetype'),
+        url('/fonts/VelaSans-Regular.svg#VelaSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
