@@ -20,13 +20,13 @@
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="">
 	<meta property="og:description" content="">
+	<link rel="preload" href="css/main.min.css" as="style" />
+
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
-	<link rel="preload" href="css/main.css" as="style" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="css/main.min.css">
 
-
-	<link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
 
@@ -181,7 +181,7 @@
 		<section class="pay pay2" id="pay">
 			<div class="container">
 				<div class="pay__box q">
-					<img src="img/pay.svg" alt="" class="pay__fig">
+					<img src="img/pay.webp" alt="" class="pay__fig">
 					<div class="pay__content">
 						<h2>
 							У вас остались вопросы?
@@ -193,19 +193,21 @@
 						</p>
 					</div>
 					<div class="pay__info">
-						<form action="#" class="pay__form formWithValidation">
+						<form action="#" class="pay__form js-form" id="popupResult" method="post">
 							<div class="pay__flex q">
 								<div class="pay__item pay__item_2">
 									<label>
 										Ваше имя: <span>*</span>
 									</label>
-									<input type="text" placeholder="Представьтесь" class="form-control field">
+									<input type="text" placeholder="Представьтесь" required="" name="name"
+										class="form-control field">
 								</div>
 								<div class="pay__item pay__item_2">
 									<label>
 										Номер телефона: <span>*</span>
 									</label>
-									<input type="tel" placeholder="+7 (___) ___ - __ - __" class="form-control tel field">
+									<input type="tel" name="tel" required="" placeholder="+7 (___) ___ - __ - __"
+										class="form-control tel field">
 								</div>
 							</div>
 							<div class="pay__item pay__item_2">
@@ -219,8 +221,8 @@
 									Отправить <img src="img/a1.svg" alt="">
 								</button>
 								<div class="pay__area">
-									<input class="form-check-input custom-checkbox" type="checkbox" name="form" id="form1"
-										value="WhatsApp ">
+									<input class="form-check-input custom-checkbox" type="checkbox" name="check" id="form1"
+										value="согласен" required="">
 									<label class="form-check-label " for="form1">
 										<p>
 											Нажимая кнопку “Отправить” я подтверждаю, что согласен <br>
@@ -292,8 +294,13 @@
 				</div>
 			</div>
 		</footer>
-		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-		<script src="js/all.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+		<!-- Подключен файл-валидатор, для проверки формы на заполненность  -->
+		<script type="text/javascript"
+			src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+		<script src="js/swiper.js"></script>
+		<script src="js/all.min.js"></script>
+
 </body>
 
 </html>

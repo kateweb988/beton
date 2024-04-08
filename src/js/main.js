@@ -1,153 +1,3 @@
-window.addEventListener("DOMContentLoaded", function () {
-  var form = document.querySelector('.formWithValidation')
-  var validateBtn = form.querySelector('.validateBtn')
-  var from = form.querySelector('.from')
-  var password = form.querySelector('.password')
-  var passwordConfirmation = form.querySelector('.passwordConfirmation')
-  var where = form.querySelector('.where')
-  var message = form.querySelector('.message')
-  var fields = form.querySelectorAll('.field')
-
-  var generateError = function (text) {
-    var error = document.createElement('div')
-    error.className = 'error'
-    error.style.color = 'red'
-    error.innerHTML = text
-    return error
-  }
-
-  var removeValidation = function () {
-    var errors = form.querySelectorAll('.error')
-
-    for (var i = 0; i < errors.length; i++) {
-      errors[i].remove()
-    }
-  }
-
-  var checkFieldsPresence = function () {
-    for (var i = 0; i < fields.length; i++) {
-      if (!fields[i].value) {
-        console.log('field is blank', fields[i])
-        var error = generateError('Это обязательное поле')
-        form[i].parentElement.insertBefore(error, fields[i])
-      }
-    }
-  }
-
-  var checkPasswordMatch = function () {
-    if (password.value !== passwordConfirmation.value) {
-      console.log('not equals')
-      var error = generateError('Password doesnt match')
-      password.parentElement.insertBefore(error, password)
-    }
-  }
-
-  form.addEventListener('submit', function (event) {
-    event.preventDefault()
-
-    removeValidation()
-
-    checkFieldsPresence()
-
-    checkPasswordMatch()
-  })
-})
-window.addEventListener("DOMContentLoaded", function () {
-  var form = document.querySelector('.formWithValidation2')
-  var validateBtn = form.querySelector('.validateBtn2')
-  var from = form.querySelector('.from')
-  var password = form.querySelector('.password')
-  var passwordConfirmation = form.querySelector('.passwordConfirmation')
-  var where = form.querySelector('.where')
-  var message = form.querySelector('.message')
-  var fields = form.querySelectorAll('.field')
-
-  var generateError = function (text) {
-    var error = document.createElement('div')
-    error.className = 'error'
-    error.style.color = 'red'
-    error.innerHTML = text
-    return error
-  }
-
-  var removeValidation = function () {
-    var errors = form.querySelectorAll('.error')
-
-    for (var i = 0; i < errors.length; i++) {
-      errors[i].remove()
-    }
-  }
-
-  var checkFieldsPresence = function () {
-    for (var i = 0; i < fields.length; i++) {
-      if (!fields[i].value) {
-        console.log('field is blank', fields[i])
-        var error = generateError('Это обязательное поле')
-        form[i].parentElement.insertBefore(error, fields[i])
-      }
-    }
-  }
-
-  var checkPasswordMatch = function () {
-    if (password.value !== passwordConfirmation.value) {
-      console.log('not equals')
-      var error = generateError('Password doesnt match')
-      password.parentElement.insertBefore(error, password)
-    }
-  }
-
-  form.addEventListener('submit', function (event) {
-    event.preventDefault()
-
-    removeValidation()
-
-    checkFieldsPresence()
-
-    checkPasswordMatch()
-  })
-})
-window.addEventListener("DOMContentLoaded", function () {
-  ymaps.ready(init);
-
-  function init() {
-    var myMap = new ymaps.Map("map", {
-      // Центр карты, указываем коордианты
-      center: [51.604463, 39.251976],
-      // Масштаб, тут все просто
-      zoom: 14,
-      // Отключаем все элементы управления
-      controls: []
-    });
-
-    var myGeoObjects = [];
-
-    // Наша метка, указываем коордианты
-    myGeoObjects = new ymaps.Placemark([51.604463, 39.251976], {
-      balloonContentBody: 'BETON',
-    }, {
-      iconLayout: 'default#image',
-      // Путь до нашей картинки
-      iconImageHref: 'img/map.svg',
-      // Размер по ширине и высоте
-      iconImageSize: [50, 70],
-      // Смещение левого верхнего угла иконки относительно
-      // её «ножки» (точки привязки).
-      iconImageOffset: [-35, -35]
-    });
-
-    var clusterer = new ymaps.Clusterer({
-      clusterDisableClickZoom: false,
-      clusterOpenBalloonOnClick: false,
-    });
-
-    clusterer.add(myGeoObjects);
-    myMap.geoObjects.add(clusterer);
-    // Отлючаем возможность изменения масштаба
-    myMap.behaviors.disable('scrollZoom');
-
-  }
-})
-
 document.addEventListener("DOMContentLoaded", () => {
   class ItcTabs {
     constructor(target, config) {
@@ -539,4 +389,102 @@ document.addEventListener("DOMContentLoaded", () => {
       popup4.classList.remove('active');
     }
   });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+      center: [51.604463, 39.251976],
+      zoom: 14,
+      controls: ['zoomControl', 'searchControl', 'typeSelector', 'fullscreenControl', 'routeButtonControl']
+    }, {
+      searchControlProvider: 'yandex#search'
+    });
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  $(document).ready(function () {
+    $('[data-submit]').on('click', function (e) {
+      e.preventDefault();
+      $(this).parents('form').submit();
+    })
+    $.validator.addMethod(
+      "regex",
+      function (value, element, regexp) {
+        var re = new RegExp(regexp);
+        return this.optional(element) || re.test(value);
+      },
+      "Please check your input."
+    );
+    function valEl(el) {
+
+      el.validate({
+        rules: {
+          tel: {
+            required: true,
+            regex: '^([\+]+)*[0-9\x20\x28\x29\-]{5,20}$'
+          },
+          name: {
+            required: true
+          }
+        },
+        messages: {
+          tel: {
+            required: 'Заполните поле',
+            regex: 'Телефон может содержать символы + - ()'
+          },
+          name: {
+            required: 'Заполните поле',
+          },
+          text: {
+            required: 'Заполните поле',
+          },
+          check: {
+            required: 'Поставьте галочку',
+          },
+          mail: {
+            required: 'Заполните поле',
+            email: 'Неверный формат E-mail'
+          }
+        },
+        submitHandler: function (form) {
+          $('#loader').fadeIn();
+          var $form = $(form);
+          var $formId = $(form).attr('id');
+          switch ($formId) {
+            case 'popupResult':
+              $.ajax({
+                type: 'POST',
+                url: $form.attr('action'),
+                data: $form.serialize(),
+              })
+                .always(function (response) {
+                  setTimeout(function () {
+                    $('#loader').fadeOut();
+                  }, 800);
+                  setTimeout(function () {
+                    $.arcticmodal('close');
+                    $('#popup-thank').arcticmodal({});
+                    $form.trigger('reset');
+                    //строки для остлеживания целей в Я.Метрике и Google Analytics
+                  }, 1100);
+
+                });
+              break;
+          }
+          return false;
+        }
+      })
+    }
+
+    $('.js-form').each(function () {
+      valEl($(this));
+    });
+    $('[data-scroll]').on('click', function () {
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'data-scroll')).offset().top
+      }, 2000);
+      event.preventDefault();
+    })
+  });
+
 });

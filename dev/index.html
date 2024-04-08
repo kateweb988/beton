@@ -78,19 +78,20 @@
 				<h2>
 					Заказать звонок
 				</h2>
-				<form action="#" class="pay__form formWithValidation">
+				<form action="#" class="pay__form js-form" id="popupResult" method="post">
 					<div class="pay__flex q">
 						<div class="pay__item pay__item_2">
 							<label>
 								Ваше имя: <span>*</span>
 							</label>
-							<input type="text" placeholder="Представьтесь" class="form-control field">
+							<input type="text" placeholder="Представьтесь" required="" name="name" class="form-control field">
 						</div>
 						<div class="pay__item pay__item_2">
 							<label>
 								Номер телефона: <span>*</span>
 							</label>
-							<input type="tel" placeholder="+7 (___) ___ - __ - __" class="form-control tel field">
+							<input type="tel" name="tel" required="" placeholder="+7 (___) ___ - __ - __"
+								class="form-control tel field">
 						</div>
 					</div>
 					<div class="pay__bottom">
@@ -98,9 +99,9 @@
 							Отправить <img src="img/a1.svg" alt="">
 						</button>
 						<div class="pay__area">
-							<input class="form-check-input custom-checkbox" type="checkbox" name="form" id="form1"
-								value="WhatsApp ">
-							<label class="form-check-label " for="form1">
+							<input class="form-check-input custom-checkbox" name="check" required="" type="checkbox"
+								value="WhatsApp " id="check">
+							<label class="form-check-label " for="check">
 								<p>
 									Нажимая кнопку “Отправить” я подтверждаю, что согласен <br>
 									с <a href="#" target="_blank"> политикой конфиденциальности.</a>
@@ -119,19 +120,20 @@
 				<h2>
 					Оставить отзыв
 				</h2>
-				<form action="#" class="pay__form formWithValidation2">
+				<form action="#" class="pay__form js-form" id="popupResult" method="post">
 					<div class="pay__flex q">
 						<div class="pay__item pay__item_2">
 							<label>
 								Ваше имя: <span>*</span>
 							</label>
-							<input type="text" placeholder="Представьтесь" class="form-control field">
+							<input type="text" placeholder="Представьтесь" required="" name="name" class="form-control field">
 						</div>
 						<div class="pay__item pay__item_2">
 							<label>
 								Комментарий: <span>*</span>
 							</label>
-							<textarea name="text" placeholder="Текст сообщения" class="form-control field"></textarea>
+							<textarea name="text" placeholder="Текст сообщения" required=""
+								class="form-control field"></textarea>
 						</div>
 					</div>
 					<div class="pay__bottom">
@@ -139,9 +141,9 @@
 							Отправить <img src="img/a1.svg" alt="">
 						</button>
 						<div class="pay__area">
-							<input class="form-check-input custom-checkbox" type="checkbox" name="form" id="form13"
-								value="WhatsApp ">
-							<label class="form-check-label " for="form13">
+							<input class="form-check-input custom-checkbox" name="check" required="" type="checkbox"
+								value="WhatsApp " id="check13">
+							<label class="form-check-label " for="check13">
 								<p>
 									Нажимая кнопку “Отправить” я подтверждаю, что согласен <br>
 									с <a href="#" target="_blank"> политикой конфиденциальности.</a>
@@ -187,6 +189,10 @@
 		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+	<!-- Подключен файл-валидатор, для проверки формы на заполненность  -->
+	<script type="text/javascript"
+		src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
 	<script src="js/all.js"></script>
 </body>
 

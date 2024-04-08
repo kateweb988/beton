@@ -256,6 +256,8 @@ input:-moz-placeholder, textarea:-moz-placeholder
          line-height: 25px
       img 
          margin-bottom: 10px
+         width: 62px
+         height: 62px
       p 
          color: rgb(71, 76, 85)
          font-size: 14px
@@ -395,12 +397,14 @@ input:-moz-placeholder, textarea:-moz-placeholder
             width: 204px
          .header__link
             width: 221px
-.error 
+label.error 
    position: absolute
-   bottom: -18px
-   left: 0
-   font-size: 11px
-   opacity: 0
+   bottom: -22px
+   left: 3px
+   color: rgb(255, 0, 0) !important
+   font-size: 12px !important
+   font-weight: 500
+   line-height: 23px
 .pay 
    border-radius: 15px
    padding: 90px 0
@@ -539,6 +543,8 @@ input:-moz-placeholder, textarea:-moz-placeholder
       justify-content: space-between
       .pay__item 
          width: 48.5%
+   &__area 
+      position: relative
 .about 
    background: rgb(255, 255, 255)
    border-radius: 15px
@@ -552,7 +558,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
       h2 
          margin-bottom: 20px
       p 
-         margin-bottom: 15px
+         margin-bottom: 20px
          color: rgb(73, 73, 73)
          font-size: 15px
          font-weight: 500
@@ -1085,7 +1091,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
          border: 1px solid rgb(147, 189, 255)
       .custom-checkbox:checked
          margin-top: -13px
-      .custom-checkbox + label
+      .custom-checkbox + label, .custom-checkbox + label + label
          p 
             font-size: 13px
             font-weight: 400

@@ -297,56 +297,56 @@ html *::-webkit-scrollbar-thumb {
 
 @font-face {
   font-family: 'Vela Sans';
-  src: url("/fonts/VelaSans-SemiBold.eot");
-  src: url("/fonts/VelaSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("/fonts/VelaSans-SemiBold.woff2") format("woff2"), url("/fonts/VelaSans-SemiBold.woff") format("woff"), url("/fonts/VelaSans-SemiBold.ttf") format("truetype"), url("/fonts/VelaSans-SemiBold.svg#VelaSans-SemiBold") format("svg");
+  src: url("../fonts/VelaSans-SemiBold.eot");
+  src: url("../fonts/VelaSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/VelaSans-SemiBold.woff2") format("woff2"), url("../fonts/VelaSans-SemiBold.woff") format("woff"), url("../fonts/VelaSans-SemiBold.ttf") format("truetype"), url("../fonts/VelaSans-SemiBold.svg#VelaSans-SemiBold") format("svg");
   font-weight: 600;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Vela Sans';
-  src: url("/fonts/VelaSans-ExtraLight.eot");
-  src: url("/fonts/VelaSans-ExtraLight.eot?#iefix") format("embedded-opentype"), url("/fonts/VelaSans-ExtraLight.woff2") format("woff2"), url("/fonts/VelaSans-ExtraLight.woff") format("woff"), url("/fonts/VelaSans-ExtraLight.ttf") format("truetype"), url("/fonts/VelaSans-ExtraLight.svg#VelaSans-ExtraLight") format("svg");
+  src: url("../fonts/VelaSans-ExtraLight.eot");
+  src: url("../fonts/VelaSans-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/VelaSans-ExtraLight.woff2") format("woff2"), url("../fonts/VelaSans-ExtraLight.woff") format("woff"), url("../fonts/VelaSans-ExtraLight.ttf") format("truetype"), url("../fonts/VelaSans-ExtraLight.svg#VelaSans-ExtraLight") format("svg");
   font-weight: 200;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Vela Sans';
-  src: url("/fonts/VelaSans-Light.eot");
-  src: url("/fonts/VelaSans-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/VelaSans-Light.woff2") format("woff2"), url("/fonts/VelaSans-Light.woff") format("woff"), url("/fonts/VelaSans-Light.ttf") format("truetype"), url("/fonts/VelaSans-Light.svg#VelaSans-Light") format("svg");
+  src: url("../fonts/VelaSans-Light.eot");
+  src: url("../fonts/VelaSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/VelaSans-Light.woff2") format("woff2"), url("../fonts/VelaSans-Light.woff") format("woff"), url("../fonts/VelaSans-Light.ttf") format("truetype"), url("../fonts/VelaSans-Light.svg#VelaSans-Light") format("svg");
   font-weight: 300;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Vela Sans';
-  src: url("/fonts/VelaSans-ExtraBold.eot");
-  src: url("/fonts/VelaSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("/fonts/VelaSans-ExtraBold.woff2") format("woff2"), url("/fonts/VelaSans-ExtraBold.woff") format("woff"), url("/fonts/VelaSans-ExtraBold.ttf") format("truetype"), url("/fonts/VelaSans-ExtraBold.svg#VelaSans-ExtraBold") format("svg");
+  src: url("../fonts/VelaSans-ExtraBold.eot");
+  src: url("../fonts/VelaSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/VelaSans-ExtraBold.woff2") format("woff2"), url("../fonts/VelaSans-ExtraBold.woff") format("woff"), url("../fonts/VelaSans-ExtraBold.ttf") format("truetype"), url("../fonts/VelaSans-ExtraBold.svg#VelaSans-ExtraBold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Vela Sans';
-  src: url("/fonts/VelaSans-Medium.eot");
-  src: url("/fonts/VelaSans-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/VelaSans-Medium.woff2") format("woff2"), url("/fonts/VelaSans-Medium.woff") format("woff"), url("/fonts/VelaSans-Medium.ttf") format("truetype"), url("/fonts/VelaSans-Medium.svg#VelaSans-Medium") format("svg");
+  src: url("../fonts/VelaSans-Medium.eot");
+  src: url("../fonts/VelaSans-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/VelaSans-Medium.woff2") format("woff2"), url("../fonts/VelaSans-Medium.woff") format("woff"), url("../fonts/VelaSans-Medium.ttf") format("truetype"), url("../fonts/VelaSans-Medium.svg#VelaSans-Medium") format("svg");
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Vela Sans';
-  src: url("/fonts/VelaSans-Bold.eot");
-  src: url("/fonts/VelaSans-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/VelaSans-Bold.woff2") format("woff2"), url("/fonts/VelaSans-Bold.woff") format("woff"), url("/fonts/VelaSans-Bold.ttf") format("truetype"), url("/fonts/VelaSans-Bold.svg#VelaSans-Bold") format("svg");
+  src: url("../fonts/VelaSans-Bold.eot");
+  src: url("../fonts/VelaSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/VelaSans-Bold.woff2") format("woff2"), url("../fonts/VelaSans-Bold.woff") format("woff"), url("../fonts/VelaSans-Bold.ttf") format("truetype"), url("../fonts/VelaSans-Bold.svg#VelaSans-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Vela Sans';
-  src: url("/fonts/VelaSans-Regular.eot");
-  src: url("/fonts/VelaSans-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/VelaSans-Regular.woff2") format("woff2"), url("/fonts/VelaSans-Regular.woff") format("woff"), url("/fonts/VelaSans-Regular.ttf") format("truetype"), url("/fonts/VelaSans-Regular.svg#VelaSans-Regular") format("svg");
+  src: url("../fonts/VelaSans-Regular.eot");
+  src: url("../fonts/VelaSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/VelaSans-Regular.woff2") format("woff2"), url("../fonts/VelaSans-Regular.woff") format("woff"), url("../fonts/VelaSans-Regular.ttf") format("truetype"), url("../fonts/VelaSans-Regular.svg#VelaSans-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
@@ -492,7 +492,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   display: none; }
 
 .custom-checkbox:checked + label::before, .custom-checkbox:checked + label + label::before {
-  background: url(/img/check.svg) no-repeat center center;
+  background: url(../img/check.svg) no-repeat center center;
   background-color: #22385f; }
 
 .swiper-pagination {
@@ -636,7 +636,9 @@ input:-moz-placeholder, textarea:-moz-placeholder {
       font-weight: 600;
       line-height: 25px; }
     .info__item img {
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      width: 62px;
+      height: 62px; }
     .info__item p {
       color: #474c55;
       font-size: 14px;
@@ -777,12 +779,14 @@ input:-moz-placeholder, textarea:-moz-placeholder {
       .item-wrap .header__links .header__link {
         width: 221px; }
 
-.error {
+label.error {
   position: absolute;
-  bottom: -18px;
-  left: 0;
-  font-size: 11px;
-  opacity: 0; }
+  bottom: -22px;
+  left: 3px;
+  color: red !important;
+  font-size: 12px !important;
+  font-weight: 500;
+  line-height: 23px; }
 
 .pay {
   border-radius: 15px;
@@ -851,7 +855,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
       box-sizing: border-box;
       margin-right: 10px; }
     .pay__form .custom-checkbox:checked + label::before, .pay__form .custom-checkbox:checked + label + label::before {
-      background: url(/img/check.svg) no-repeat center center;
+      background: url(../img/check.svg) no-repeat center center;
       background-color: #22385f; }
   .pay__item {
     margin-bottom: 10px;
@@ -920,6 +924,8 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     justify-content: space-between; }
     .pay__flex .pay__item {
       width: 48.5%; }
+  .pay__area {
+    position: relative; }
 
 .about {
   background: white;
@@ -934,7 +940,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     .about__content h2 {
       margin-bottom: 20px; }
     .about__content p {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       color: #494949;
       font-size: 15px;
       font-weight: 500;
@@ -1253,7 +1259,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   .dropdown:after {
     content: "";
     position: absolute;
-    background: url(/img/own.svg) no-repeat center center;
+    background: url(../img/own.svg) no-repeat center center;
     right: 0px;
     height: 50px;
     width: 50px;
@@ -1476,22 +1482,22 @@ input:-moz-placeholder, textarea:-moz-placeholder {
       font-weight: 700;
       margin-right: 0; }
     .err2 .pay__form .custom-checkbox:checked + label::before {
-      background: url(/img/check.svg) no-repeat center center;
+      background: url(../img/check.svg) no-repeat center center;
       background-color: #93bdff;
       border: 1px solid #93bdff; }
     .err2 .pay__form .custom-checkbox:checked {
       margin-top: -13px; }
-    .err2 .pay__form .custom-checkbox + label p {
+    .err2 .pay__form .custom-checkbox + label p, .err2 .pay__form .custom-checkbox + label + label p {
       font-size: 13px;
       font-weight: 400;
       color: white;
       margin-bottom: 0;
       max-width: 100%;
       line-height: 120%; }
-    .err2 .pay__form .custom-checkbox + label a {
+    .err2 .pay__form .custom-checkbox + label a, .err2 .pay__form .custom-checkbox + label + label a {
       color: #93bdff;
       margin-left: 3px; }
-      .err2 .pay__form .custom-checkbox + label a:hover {
+      .err2 .pay__form .custom-checkbox + label a:hover, .err2 .pay__form .custom-checkbox + label + label a:hover {
         color: white; }
 
 .contacts__row {
@@ -1729,7 +1735,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
         display: block;
         position: absolute;
         top: 50%;
-        background: url(/img/lupe.svg) no-repeat center center;
+        background: url(../img/lupe.svg) no-repeat center center;
         left: 50%;
         width: 90px;
         height: 90px;

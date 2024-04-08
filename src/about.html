@@ -20,14 +20,13 @@
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="">
 	<meta property="og:description" content="">
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-
-	<link rel="preload" href="css/main.css" as="style" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="preload" href="css/main.min.css" as="style" />
 
 
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fancybox.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+
 
 </head>
 
@@ -131,7 +130,7 @@
 					О компании
 				</h1>
 				<div class="ab__box q">
-					<img src="img/beton.svg" alt="" class="ab__fig">
+					<img src="img/beton.webp" alt="" class="ab__fig">
 					<div class="ab__content">
 						<div class="ab__text">
 							<p>
@@ -182,7 +181,7 @@
 							</div>
 						</div>
 					</div>
-					<img src="img/about.png" alt="" class="ab__pic">
+					<img src="img/about.webp" alt="" class="ab__pic">
 				</div>
 			</div>
 		</section>
@@ -204,28 +203,28 @@
 				<div class="swiper2">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<a href="img/ser1.png" data-fancybox="gallery">
-								<img src="img/ser1.png" alt="">
+							<a href="img/ser1.webp" data-fancybox="gallery">
+								<img src="img/ser1.webp" alt="">
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="img/ser2.png" data-fancybox="gallery">
-								<img src="img/ser2.png" alt="">
+							<a href="img/ser2.webp" data-fancybox="gallery">
+								<img src="img/ser2.webp" alt="">
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="img/ser3.png" data-fancybox="gallery">
-								<img src="img/ser3.png" alt="">
+							<a href="img/ser3.webp" data-fancybox="gallery">
+								<img src="img/ser3.webp" alt="">
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="img/ser1.png" data-fancybox="gallery">
-								<img src="img/ser1.png" alt="">
+							<a href="img/ser1.webp" data-fancybox="gallery">
+								<img src="img/ser1.webp" alt="">
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="img/ser2.png" data-fancybox="gallery">
-								<img src="img/ser2.png" alt="">
+							<a href="img/ser2.webp" data-fancybox="gallery">
+								<img src="img/ser2.webp" alt="">
 							</a>
 						</div>
 					</div>
@@ -235,7 +234,7 @@
 		<section class="pay" id="pay">
 			<div class="container">
 				<div class="pay__box q">
-					<img src="img/pay.svg" alt="" class="pay__fig">
+					<img src="img/pay.webp" alt="" class="pay__fig">
 					<div class="pay__content">
 						<h2>
 							Рассчитайте стоимость бетона
@@ -246,7 +245,7 @@
 						</p>
 					</div>
 					<div class="pay__info">
-						<form action="#" class="pay__form formWithValidation">
+						<form action="#" class="pay__form js-form" id="popupResult" method="post">
 							<div class="pay__flex q">
 								<div class="pay__item">
 									<label>
@@ -292,13 +291,15 @@
 									<label>
 										Ваше имя: <span>*</span>
 									</label>
-									<input type="text" placeholder="Представьтесь" class="form-control field">
+									<input type="text" placeholder="Представьтесь" required="" name="name"
+										class="form-control field">
 								</div>
 								<div class="pay__item pay__item_2">
 									<label>
 										Номер телефона: <span>*</span>
 									</label>
-									<input type="tel" placeholder="+7 (___) ___ - __ - __" class="form-control tel field">
+									<input type="tel" name="tel" required="" placeholder="+7 (___) ___ - __ - __"
+										class="form-control tel field">
 								</div>
 							</div>
 							<div class="pay__block q">
@@ -314,8 +315,8 @@
 									Отправить <img src="img/a1.svg" alt="">
 								</button>
 								<div class="pay__area">
-									<input class="form-check-input custom-checkbox" type="checkbox" name="form" id="form1"
-										value="WhatsApp ">
+									<input class="form-check-input custom-checkbox" type="checkbox" name="check" id="form1"
+										value="согласен" required="">
 									<label class="form-check-label " for="form1">
 										<p>
 											Нажимая кнопку “Отправить” я подтверждаю, что согласен <br>
@@ -378,7 +379,7 @@
 		<section class="err2" id="err2">
 			<div class="container">
 				<div class="err2__box">
-					<img src="img/car3.png" alt="" class="err2__fig">
+					<img src="img/car3.webp" alt="" class="err2__fig">
 					<h2>
 						Есть вопросы? Мы готовы ответить на все!
 					</h2>
@@ -386,24 +387,25 @@
 						Если у вас есть вопросы касательно нашей компании, стоимости, сотрудничества и пр. оставьте свои
 						контактные данные и мы ответим на все интересующие вас темы.
 					</p>
-					<form action="#" class="pay__form formWithValidation">
+					<form action="#" class="pay__form js-form" id="popupResult" method="post">
 						<div class="pay__flex q">
 							<div class="pay__item pay__item_2">
-								<input type="text" placeholder="Ваше имя" class="form-control field">
+								<input type="text" placeholder="Ваше имя" required="" name="name" class="form-control field">
 							</div>
 							<div class="pay__item pay__item_2">
-								<input type="tel" placeholder="+7 (___) ___ - __ - __" class="form-control tel field">
+								<input type="tel" placeholder="+7 (___) ___ - __ - __" class="form-control tel field"
+									name="tel">
 							</div>
-							<button class="btn pay__btn btn-submit validateBtn">
+							<button class="btn pay__btn btn-submit">
 								Отправить
 							</button>
 						</div>
 						<div class="pay__bottom">
 
 							<div class="pay__area">
-								<input class="form-check-input custom-checkbox" type="checkbox" name="form" id="form1"
-									value="WhatsApp ">
-								<label class="form-check-label " for="form1">
+								<input class="form-check-input custom-checkbox" type="checkbox" name="check" id="form14"
+									value="согласен" required="">
+								<label class="form-check-label " for="form14">
 									<p>
 										Нажимая кнопку “Отправить” я подтверждаю, что согласен
 										с <a href="#" target="_blank"> политикой конфиденциальности.</a>
@@ -473,8 +475,13 @@
 			</div>
 		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-		<script src="js/all.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+		<!-- Подключен файл-валидатор, для проверки формы на заполненность  -->
+		<script type="text/javascript"
+			src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+		<script src="js/swiper.js"></script>
+		<script src="js/all.min.js"></script>
+
 </body>
 
 </html>

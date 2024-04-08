@@ -20,13 +20,13 @@
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="">
 	<meta property="og:description" content="">
+	<link rel="preload" href="css/main.min.css" as="style" />
+
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
-	<link rel="preload" href="css/main.css" as="style" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="css/main.min.css">
 
-
-	<link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
 
@@ -131,7 +131,7 @@
 				</h1>
 			</div>
 			<div class="pro__wrap">
-				<img src="img/it1.png" alt="" class="pro__bg">
+				<img src="img/it1.webp" alt="" class="pro__bg">
 				<div class="container">
 					<div class="pro__box q">
 						<div class="pro__content">
@@ -159,7 +159,7 @@
 				<div class="item__box q">
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item3.png" alt="">
+							<img src="img/item3.webp" alt="">
 							<p>
 								Бетон М-100
 							</p>
@@ -175,7 +175,7 @@
 					</div>
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item2.png" alt="">
+							<img src="img/item2.webp" alt="">
 							<p>
 								Бетон М-150
 							</p>
@@ -191,7 +191,7 @@
 					</div>
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item3.png" alt="">
+							<img src="img/item3.webp" alt="">
 							<p>
 								Бетон М-2000
 							</p>
@@ -207,7 +207,7 @@
 					</div>
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item4.png" alt="">
+							<img src="img/item4.webp" alt="">
 							<p>
 								Бетон М-250
 							</p>
@@ -223,7 +223,7 @@
 					</div>
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item5.png" alt="">
+							<img src="img/item5.webp" alt="">
 							<p>
 								Бетон М-300
 							</p>
@@ -239,7 +239,7 @@
 					</div>
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item6.png" alt="">
+							<img src="img/item6.webp" alt="">
 							<p>
 								Бетон М-350
 							</p>
@@ -255,7 +255,7 @@
 					</div>
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item7.png" alt="">
+							<img src="img/item7.webp" alt="">
 							<p>
 								Бетон М-400
 							</p>
@@ -271,7 +271,7 @@
 					</div>
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item8.png" alt="">
+							<img src="img/item8.webp" alt="">
 							<p>
 								Бетон М-450
 							</p>
@@ -291,7 +291,7 @@
 		<section class="err2" id="err2">
 			<div class="container">
 				<div class="err2__box">
-					<img src="img/car3.png" alt="" class="err2__fig">
+					<img src="img/car3.webp" alt="" class="err2__fig">
 					<h2>
 						Есть вопросы? Мы готовы ответить на все!
 					</h2>
@@ -299,23 +299,24 @@
 						Если у вас есть вопросы касательно нашей компании, стоимости, сотрудничества и пр. оставьте свои
 						контактные данные и мы ответим на все интересующие вас темы.
 					</p>
-					<form action="#" class="pay__form formWithValidation">
+					<form action="#" class="pay__form js-form" id="popupResult" method="post">
 						<div class="pay__flex q">
 							<div class="pay__item pay__item_2">
-								<input type="text" placeholder="Ваше имя" class="form-control field">
+								<input type="text" placeholder="Ваше имя" required="" name="name" class="form-control field">
 							</div>
 							<div class="pay__item pay__item_2">
-								<input type="tel" placeholder="+7 (___) ___ - __ - __" class="form-control tel field">
+								<input type="tel" placeholder="+7 (___) ___ - __ - __" class="form-control tel field"
+									name="tel">
 							</div>
-							<button class="btn pay__btn btn-submit validateBtn">
+							<button class="btn pay__btn btn-submit">
 								Отправить
 							</button>
 						</div>
 						<div class="pay__bottom">
 
 							<div class="pay__area">
-								<input class="form-check-input custom-checkbox" type="checkbox" name="form" id="form1"
-									value="WhatsApp ">
+								<input class="form-check-input custom-checkbox" type="checkbox" name="check" id="form1"
+									value="согласен" required="">
 								<label class="form-check-label " for="form1">
 									<p>
 										Нажимая кнопку “Отправить” я подтверждаю, что согласен
@@ -330,7 +331,7 @@
 		</section>
 		<section class="pro section" id="pro2">
 			<div class="pro__wrap">
-				<img src="img/it2.png" alt="" class="pro__bg">
+				<img src="img/it2.webp" alt="" class="pro__bg">
 				<div class="container">
 					<div class="pro__box q">
 						<div class="pro__content">
@@ -358,7 +359,7 @@
 				<div class="item__box q">
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item3.png" alt="">
+							<img src="img/item3.webp" alt="">
 							<p>
 								ФБС 9-3-6т
 							</p>
@@ -377,7 +378,7 @@
 					</div>
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item1.png" alt="">
+							<img src="img/item1.webp" alt="">
 							<p>
 								ФБС 9-3-6т
 							</p>
@@ -396,7 +397,7 @@
 					</div>
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item2.png" alt="">
+							<img src="img/item2.webp" alt="">
 							<p>
 								ФБС 9-3-6т
 							</p>
@@ -415,7 +416,7 @@
 					</div>
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item4.png" alt="">
+							<img src="img/item4.webp" alt="">
 							<p>
 								ФБС 9-3-6т
 							</p>
@@ -434,7 +435,7 @@
 					</div>
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item3.png" alt="">
+							<img src="img/item3.webp" alt="">
 							<p>
 								ФБС 9-3-6т
 							</p>
@@ -453,7 +454,7 @@
 					</div>
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item3.png" alt="">
+							<img src="img/item3.webp" alt="">
 							<p>
 								ФБС 9-3-6т
 							</p>
@@ -472,7 +473,7 @@
 					</div>
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item3.png" alt="">
+							<img src="img/item3.webp" alt="">
 							<p>
 								ФБС 9-3-6т
 							</p>
@@ -491,7 +492,7 @@
 					</div>
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item3.png" alt="">
+							<img src="img/item3.webp" alt="">
 							<p>
 								ФБС 9-3-6т
 							</p>
@@ -510,7 +511,7 @@
 					</div>
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item3.png" alt="">
+							<img src="img/item3.webp" alt="">
 							<p>
 								ФБС 9-3-6т
 							</p>
@@ -529,7 +530,7 @@
 					</div>
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item3.png" alt="">
+							<img src="img/item3.webp" alt="">
 							<p>
 								ФБС 9-3-6т
 							</p>
@@ -548,7 +549,7 @@
 					</div>
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item3.png" alt="">
+							<img src="img/item3.webp" alt="">
 							<p>
 								ФБС 9-3-6т
 							</p>
@@ -570,7 +571,7 @@
 		</section>
 		<section class="pro section" id="pro3">
 			<div class="pro__wrap">
-				<img src="img/it3.png" alt="" class="pro__bg">
+				<img src="img/it3.webp" alt="" class="pro__bg">
 				<div class="container">
 					<div class="pro__box q">
 						<div class="pro__content">
@@ -598,7 +599,7 @@
 				<div class="item__box q">
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item3.png" alt="">
+							<img src="img/item3.webp" alt="">
 							<p>
 								М-75
 							</p>
@@ -614,7 +615,7 @@
 					</div>
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item2.png" alt="">
+							<img src="img/item2.webp" alt="">
 							<p>
 								М-100
 							</p>
@@ -630,7 +631,7 @@
 					</div>
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item5.png" alt="">
+							<img src="img/item5.webp" alt="">
 							<p>
 								М-150
 							</p>
@@ -646,7 +647,7 @@
 					</div>
 					<div class="item__block">
 						<div class="item__info">
-							<img src="img/item3.png" alt="">
+							<img src="img/item3.webp" alt="">
 							<p>
 								М-75
 							</p>
@@ -681,7 +682,7 @@
 						</a>
 					</div>
 					<img src="img/mem.svg" alt="" class="memory__fig">
-					<img src="img/mem.png" alt="" class="memory__pic">
+					<img src="img/mem.webp" alt="" class="memory__pic">
 				</div>
 			</div>
 		</section>
@@ -742,8 +743,13 @@
 				</div>
 			</div>
 		</footer>
-		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-		<script src="js/all.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+		<!-- Подключен файл-валидатор, для проверки формы на заполненность  -->
+		<script type="text/javascript"
+			src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+		<script src="js/swiper.js"></script>
+		<script src="js/all.min.js"></script>
+
 </body>
 
 </html>
